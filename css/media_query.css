@@ -1,0 +1,98 @@
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .navbar .container .nav-manu {
+    position: absolute;
+    top: 100%;
+    background-color: #00000083;
+    flex-direction: column;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    /* display: none; */
+    max-height: 0%;
+    overflow: hidden;
+    transition: all var(--main-transition);
+  }
+  .navbar .container .nav-manu a {
+    display: block;
+    padding-block: 10px;
+  }
+  .navbar label {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar #menu:checked ~ .nav-manu {
+    /* display: flex; */
+    max-height: 500px;
+  }
+  #about .about-area .about-text,
+  #about .about-area .about-info {
+    width: 100%;
+  }
+  #about .about-area .about-text {
+    text-align: center;
+  }
+  #about .about-area .about-counter .item {
+    width: 50%;
+  }
+  .title h2 {
+    font-size: 3.5rem; /*alt + z*/
+  }
+  .title {
+    position: relative;
+    margin-bottom: 100px;
+  }
+  #services .service-area .item {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #services .service-area .item .icon {
+    width: fit-content;
+  }
+  #resume .resume-area .item {
+    width: 100%;
+  }
+  #portfolio .portfolio-area .gallary .col {
+    width: calc((100% - 30px) / 2);
+  }
+  #portfolio .portfolio-area .gallary .col:last-child {
+    margin-top: -200px;
+  }
+  #testimonial .client-area .client {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .title h2 {
+    font-size: 2.5rem; /*alt + z*/
+  }
+  #resume .skills .skills-area .item {
+    width: 100%;
+  }
+  #portfolio .portfolio-area .gallary .col {
+    width: 100%;
+  }
+  #portfolio .portfolio-area .gallary .col:last-child {
+    margin-top: 0;
+  }
+}
+@media (max-width: 576px) {
+  .title h2 {
+    font-size: 1.5rem; /*alt + z*/
+  }
+  #about .about-area .about-counter .item {
+    width: 100%;
+  }
+  #about .about-area .about-counter .item:not(:last-child) {
+    border-right: none;
+  }
+}
